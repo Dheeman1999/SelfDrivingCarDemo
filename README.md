@@ -1,7 +1,9 @@
 # SelfDrivingCarDemo
 A repository created for testing the efficacy of neural networks designed for self driving cars.
 ## Getting Started 
-The repository will contain 5 files: </br>
+The repository will contain 7 files: </br>
+- FurtherOptimisation.ipynb
+- OriginalNetwork.ipynb
 - The Simulator application </br> 
 - The Driver.py script </br>
 - 3 keras models : 
@@ -9,7 +11,8 @@ The repository will contain 5 files: </br>
   - originalmodel.h5 
   - NoAug.h5 . </br>
  All the three files are trained keras neural net models for the simulator.The ```model.h5``` is a newly created and trained optimal model, the ```originalmodel.h5``` is a trained model of the neural net proposed by NVIDIA. The third one is the same original model trained without data augmentation.It has been added just to show how important image augmentation is(if you test the NoAug.h5 model you would see that the model fails miserably in the simulation!).The Driver.py is the interface that connects the model with the simulator.
-
+## Important note
+The two jupyter notebooks are for reference only and are advised to be opened only in Google Collaboratory. You can train the network there if you wish to and see the results.(Make sure the GPU mode is on for hardware acceleration).
 ## Dependencies
 The repository is designed for linux only. In addition the following would be required to be installed : </br>
 - Python 3 </br>
